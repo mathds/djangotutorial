@@ -6,7 +6,7 @@
 
 ### Virtual environnement 
 
-# cd C:/Users/nico/Documents/00_LBL/01_Tutorials/djangotutorial
+# cd C:/Users/nico/Documents/00_LBL/01_Tutorials/djangotutorial/djangogirls
 
 ## What is it : 
 
@@ -62,6 +62,11 @@
 # python manage.py createsuperuser
 
 
+# URL management
+# Redirect URL to views with regex
+
+# views.py
+# where the logic is, request info from the model, pass it to a template, can do computing  
 
 
 
@@ -69,19 +74,26 @@
 
 
 
+###################################################
+
+
+# # # Deploy with PythonAnywhere
+
+# clone the repository by writing into the bash : 
+
+# git clone https://github.com/<your-github-username>/my-first-blog.git
+
+# work with a virtual environnement
+
+# virtualenv --python=python3.6 myvenv
+# source myvenv/bin/activate
+
+# do everything as done for the 
 
 
 
 
-
-
-
-
-
-
-
-
-### Git 
+# # # Git 
 
 # # Initialize repository
 
