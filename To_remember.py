@@ -169,11 +169,14 @@
 # from django.shortcuts import get_object_or_404
 # post = get_object_or_404(Post, pk=pk) # in the view function with parameters (request, pk)
 
+# # # create form 
+# create file forms.py 
+#Add URL view and template
 
-
-
-
-
+# # # get info from url 
+# in urls.py :
+# url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit')
+# (?P<pk>\d+) allows to capture a number into variable pk
 
 
 
