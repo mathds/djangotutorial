@@ -2,7 +2,7 @@
  Django tutorial reminder
 """
 
-#### commenter ctrl-K decommenter ctrl-Q
+
 
 ### Virtual environnement 
 
