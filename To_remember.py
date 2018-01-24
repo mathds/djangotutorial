@@ -88,7 +88,53 @@
 # virtualenv --python=python3.6 myvenv
 # source myvenv/bin/activate
 
-# do everything as done for the 
+# do everything as in local
+
+
+# # Django ORM and QuerySets
+# how Django connects to the database and stores data in it
+# QuerySets allow you to read the data from the database, filter it and order it.
+
+# # Django shell
+# display
+# python manage.py shell
+
+# display object 
+# from blog.models import Post
+# Post.objects.all()
+
+# create object
+# from django.contrib.auth.models import User
+# User.objects.all()
+# me = User.objects.get(username='mathieu') # mathieu is superuser
+# Post.objects.create(author=me, title='Sample title', text='Test')
+
+# query filter
+# Post.objects.filter(author=me)
+# Post.objects.filter(title__contains='title')
+# from django.utils import timezone
+# Post.objects.filter(published_date__lte=timezone.now())
+
+# post = Post.objects.get(title="Sample title")
+# post.publish()
+
+# # Ordering objects
+# Post.objects.order_by('created_date')
+# Post.objects.order_by('-created_date')
+
+# # chaining querysets
+# Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+
+
+# to print a variable in Django templates, we use double curly brackets
+# {{ posts }}
+
+# python code in html template :
+# {% for post in posts %}
+    # <div></div>
+# {% endfor %}
+
+
 
 
 
@@ -106,13 +152,15 @@
 
 # git status
 
-# # add untracked files 
+# # add untracked files (point is current directory)
 
-# git add --all 
+# git add --all .
 
 # # commit all 
 
 # git commit -m
+# with comments
+# git commit -m "Changed the HTML for the site."
 
 # # hook up git repository to the website and push
 
